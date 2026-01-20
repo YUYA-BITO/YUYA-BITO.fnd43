@@ -1,0 +1,71 @@
+body {
+  background: white;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN",sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 800px;
+}
+
+.card {
+  background: rgb(232, 231, 231);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px raba(0,0,0,0.1);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-label {
+  color: palevioletred;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+#target-names {
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px 0;
+}
+
+#message-text {
+  color: blue;
+  line-height: 1.6;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: pink;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: palevioletred;
+  color:white;
+}
+
+@keyframes fadeUP {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -100%);}
+}
+
