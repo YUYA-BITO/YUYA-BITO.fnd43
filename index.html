@@ -3,19 +3,24 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <script type="text/javascript" src="script.js"></script>
+  <title>感謝のメッセージボード</title>
+  <link rel="stylesheet"href="presen.css">
 </head>
 
 <body>
-  <h1>DIG プログラミング基礎へようこそ！</h1>
-  <h2>Mac をお使いの方は、 <font color="blue"> Cmd + Option + J</font><br>
-    Windows/Linux をお使いの方は、 <font color="blue"> Control+Shift+J</font> <br>
-    をクリックして、デベロッパーツールを開いてください。</h2>
-  <h2>下記にユニコーンの画像が表示されていれば成功です！</h2>
-  <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif">
-  <h3>30分悩んで進まなくなったら…helpチャンネルで質問してみましょう！</h3>
+  <div class="container">
+    <h1 id="main-title">Special Thanks</h1>
+    <div id="display-area"class="card">
+      <div id="target-category"class="category-label">Category</div>
+      <h2 id="target-names">名前が表示される</h2>
+      <p id="message-text">感謝のメッセージ</p>
+    </div>
+    <div class="controls">
+      <button id="prev-btn">前へ</button>
+      <span id="page-number">1 / 8</span>
+      <button id="next-btn">次へ</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
